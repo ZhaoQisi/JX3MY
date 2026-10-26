@@ -66,8 +66,8 @@ function X.GetCharacterLife(kTar)
 	if not kTar then
 		return
 	end
-	return X.IS_REMAKE and kTar.fCurrentLife64 or kTar.nCurrentLife,
-		X.IS_REMAKE and kTar.fMaxLife64 or kTar.nMaxLife
+	return kTar.fCurrentLife64 or kTar.nCurrentLife,
+		kTar.fMaxLife64 or kTar.nMaxLife
 end
 
 -- 获取目标内力和最大内力
